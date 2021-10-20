@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-color: #1a52f9;
+    background-image: linear-gradient(19deg, #1a52f9 0%, #B721ff 84%);
+    position: relative;
+    z-index: 1;
+}
+header::before{
+    content: "";
+    width: 500px;
+    height: 500px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-image: linear-gradient(rgba(21, 121, 252,0.4),rgba(160, 21, 252, 0.63)),url(./images/img.jpeg);
+    background-size: 100% 100%;
+    border-radius: 100px 100px 100px 0;
+}
+nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+.logo a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li{
+    text-transform: capitalize;
+    padding: 0 15px;
+}
+.active , ul li a:hover{
+    border-top: 2px solid #5dade2;
+    border-bottom: 2px solid #5dade2;
+}
+.contact-btn a{
+    background-color: #d465ef;
+    font-style: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    padding: 12px 26px;
+    transition: all 1s;
+}
+.contact-btn a:hover{
+    background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+}
+
+.center_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.center_content h1{
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.center_content h2{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.center_content h2::before{
+    content: "";
+    width: 80px;
+    height: auto;
+    border: 2px dashed #fff;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    margin-bottom: 13px;
+}
+.social_network{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    right: 0;
+    top: 40%;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon:nth-child(even){
+    margin: 15px 0;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom, #d465ef 0%, #615cfd 100%);
+}
+
+.grid_sec{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    bottom: 0;
+    left: 55%;
+    overflow: hidden;
+}
